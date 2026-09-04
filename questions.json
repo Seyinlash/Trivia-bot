@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What year was JavaScript created?",
+    "answer": "1995"
+  },
+  {
+    "question": "What planet is known as the Red Planet?",
+    "answer": "Mars"
+  },
+  {
+    "question": "What does 'HTTP' stand for?",
+    "answer": "HyperText Transfer Protocol"
+  },
+  {
+    "question": "How many bones are in the adult human body?",
+    "answer": "206"
+  },
+  {
+    "question": "What company created the game Fortnite?",
+    "answer": "Epic Games"
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "answer": "Pacific Ocean"
+  },
+  {
+    "question": "In Python, what symbol is used to start a comment?",
+    "answer": "#"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "answer": "Au"
+  },
+  {
+    "question": "Who developed the theory of general relativity?",
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "What year did the first iPhone release?",
+    "answer": "2007"
+  }
+]
