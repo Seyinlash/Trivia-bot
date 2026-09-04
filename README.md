@@ -61,7 +61,7 @@ Try `/ping` in Slack - you should get "pong" back.
    `pm2` keeps it running after you disconnect and restarts it if it crashes.
 
 ## Storage
-Scores live in `scores.json`, the currently active question lives in `state.json`. Both are plain JSON files that get created/updated automatically - no database needed for now.
+Scores live in `scores.json`, the currently active question lives in `state.json`. Both are plain JSON files that get created/updated automatically.
 
 ## Next improvements (later)
 - Scheduled daily question post (cron) instead of manual `/trivia`
