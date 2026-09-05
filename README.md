@@ -62,8 +62,3 @@ Try `/ping` in Slack - you should get "pong" back.
 
 ## Storage
 Scores live in `scores.json`, the currently active question lives in `state.json`. Both are plain JSON files that get created/updated automatically.
-
-## Next improvements (later)
-- Scheduled daily question post (cron) instead of manual `/trivia`
-- Difficulty/category selection
-- Streaks, weekly resets, DM reminders
