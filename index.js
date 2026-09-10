@@ -38,7 +38,7 @@ app.command('/trivia-question', async ({ ack, respond, command }) => {
 
   await respond({
     response_type: 'in_channel',
-    text: `🧠 *Trivia time!*\n${q.question}\n\nDM me your answer — first correct one wins the point!`,
+    text: `🧠 *Trivia time!*\n${q.question}\n\nDM me your answer - first correct one wins the point!`,
   });
 });
 
@@ -47,10 +47,10 @@ app.command('/trivia-leaderboard', async ({ ack, respond }) => {
   await ack();
   const board = getLeaderboard();
   if (board.length === 0) {
-    await respond('No points on the board yet — answer a question to get started!');
+    await respond('No points on the board yet - answer a question to get started!');
     return;
   }
-  const lines = board.map(([userId, score], i) => `${i + 1}. <@${userId}> — ${score} pt${score === 1 ? '' : 's'}`);
+  const lines = board.map(([userId, score], i) => `${i + 1}. <@${userId}> - ${score} pt${score === 1 ? '' : 's'}`);
   await respond(`🏆 *Trivia Leaderboard*\n${lines.join('\n')}`);
 });
 
@@ -79,7 +79,7 @@ app.message(async ({ message, say }) => {
   }
 
   if (state.answeredBy) {
-    await say('That question was already answered — wait for the next one!');
+    await say('That question was already answered - wait for the next one!');
     return;
   }
 
@@ -92,7 +92,7 @@ app.message(async ({ message, say }) => {
     const newScore = addPoint(message.user);
     await say(`✅ Correct! You now have ${newScore} point${newScore === 1 ? '' : 's'}.`);
   } else {
-    await say('❌ Not quite — try again!');
+    await say('❌ Not quite - try again!');
   }
 });
 
